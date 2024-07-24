@@ -27,9 +27,9 @@ class PendingOrdersControllerImp extends PendingOrdersController {
   StatusRequest locationstatusRequest = StatusRequest.none;
   StatusRequest approvestatusRequest = StatusRequest.none;
   String darkmodemap =
-      "https://api.mapbox.com/styles/v1/abdouloc27/clymrg5m5007i01pl8i2z6g87/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWJkb3Vsb2MyNyIsImEiOiJjbHhvODI0YTgwYzhkMmtyMjAyZTB5MWJkIn0.ZpxA-NzmE_sEOULxV9MPbA";
+      "https://api.mapbox.com/styles/v1/abdouloc27/clymrg5m5007i01pl8i2z6g87/tiles/256/{z}/{x}/{y}@2x?access_token=";
   String lightmodemap =
-      "https://api.mapbox.com/styles/v1/abdouloc27/clxoeywkh00l101qrdynufsse/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWJkb3Vsb2MyNyIsImEiOiJjbHhvODI0YTgwYzhkMmtyMjAyZTB5MWJkIn0.ZpxA-NzmE_sEOULxV9MPbA";
+      "https://api.mapbox.com/styles/v1/abdouloc27/clxoeywkh00l101qrdynufsse/tiles/256/{z}/{x}/{y}@2x?access_token=";
   double officelatlocation = 36.190020;
   double officelanglocation = 5.440050;
   double? orderLocationLat;
