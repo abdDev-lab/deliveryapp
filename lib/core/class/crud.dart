@@ -7,9 +7,6 @@ import 'package:deliveryapp/core/class/statusrequest.dart';
 import 'package:http/http.dart' as http;
 
 class Crud {
-  Map<String, String> myheaders = {
-    'authorization':'Basic ' + base64Encode(utf8.encode('abdouDev:27112004@Api'))
-  };
 
   Future<Either<StatusRequest, Map>> postRequest(String link, Map data) async {
     try {
@@ -37,7 +34,7 @@ class Crud {
     String point2longitude,
   ) async {
     final String url =
-        'https://api.openrouteservice.org/v2/directions/driving-car?api_key=5b3ce3597851110001cf62485dd7b5b32e6d423588529a196078ef16&start=$point1longitude,$point1latitude&end=$point2longitude,$point2latitude';
+        'https://api.openrouteservice.org/v2/directions/driving-car?api_key=&start=$point1longitude,$point1latitude&end=$point2longitude,$point2latitude';
 
     final response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
